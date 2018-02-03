@@ -92,14 +92,14 @@ Karma的作者是AngularJS团队。Karma是一个工具，可以通过cli针对�
 > 使用chrome浏览器测试
 
 	language: node_js
-		node_js:
-			- "9.2.1"
-		scripts:
-    		- node_modules/karma/bin/karma start karma.conf.js --single-run
-		before_install:
-		 	- export CHROME_BIN=chromium-browser
-		 	- export DISPLAY=:99.0
-		 	- sh -e /etc/init.d/xvfb start
+	node_js:
+		- "9.2.1"
+	scripts:
+		- node_modules/karma/bin/karma start karma.conf.js --single-run
+	before_install:
+	 	- export CHROME_BIN=chromium-browser
+	 	- export DISPLAY=:99.0
+	 	- sh -e /etc/init.d/xvfb start
 
 遇到的问题：
 
