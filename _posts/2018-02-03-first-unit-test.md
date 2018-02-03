@@ -17,7 +17,7 @@ title: 单元测试
 
 #### 2.1 TDD or BDD
 ```
-* TDD:测试驱动开发 
+* TDD:测试驱动开发
 * BDD：行为驱动开发
 ```
 简而言之，TDD是在执行之前编写测试来驱动代码设计的做法。BDD建议测试行为，不考虑代码具体实现，而是考虑这个场景期待什么结果。
@@ -44,7 +44,7 @@ Mocha本身是不带断言库的，可以根据自己的喜好选择，比如sho
        		})
 	  	})
 	})
-	
+
 以上代码是同步执行的，如果想要测试异步的，就使用done().
 
 最后执行mocha（或npm test）即可看到结果。
@@ -57,7 +57,7 @@ Travis CI是一个提供持续整合服务的平台，将github于Travis CI整�
 2.Travis CI会列出github上所有的repository，选择我们要进行测试的项目，激活。
 
 3.我们需要在项目里添加.travis.yml文件，用于写入travis配置。如下：
-	
+
 	language: node_js
 	node_js:
 		- "9.2.1"
@@ -72,7 +72,7 @@ Karma的作者是AngularJS团队。Karma是一个工具，可以通过cli针对�
 全局安装：sudo npm install karma-cli -g
 
 	npm install karma karma-chrome-launcher karma-mocha --save-dev
-	
+
 执行karma init进行初始化配置，将会生成一个karma.conf.js文件。具体配置项可以参阅官方配置文档。
 
 在package.json中，配置运行命令：
@@ -80,13 +80,13 @@ Karma的作者是AngularJS团队。Karma是一个工具，可以通过cli针对�
 	"scripts": {
     	"test": "karma start karma.conf.js"
     },
-	
+
 通过npm test运行，如果结果正确，则会在控制台显示如下:
 
 	Karma v1.7.1 server started at http://0.0.0.0:9887/
 	Launching browser Chrome with unlimited concurrency
 	Starting browser Chrome
-	
+
 #### 2.5 再次整合Travis CI
 
 > 使用chrome浏览器测试
@@ -113,9 +113,9 @@ The SUID sandbox helper binary was found, but is not configured correctly. Rathe
 查找Travis官方文档找到解决方案[Chrome](https://docs.travis-ci.com/user/chrome):--no-sandbox
 
 设置config：
-	
+
 	cfg对象：
-	
+
 	// travis ci 使用chrome测试
 	customLaunchers: {
       Chrome_travis_ci: {
@@ -127,8 +127,8 @@ The SUID sandbox helper binary was found, but is not configured correctly. Rathe
     if (process.env.TRAVIS) {
         cfg.browsers = ['Chrome_travis_ci'];
     }
-    
+
     config.set(cfg);
-    
-#### 2.6 总结
+
+### 3. 总结
 这次总结只是大概梳理一下学习的单元测试流程，还有很多需要深入学习的地方，在未来还要继续努力。感谢老师和同学们。
