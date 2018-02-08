@@ -4,27 +4,29 @@
   {% include head.html %}
 </head>
 <body>
-    {% include header.html %}
+    <main class="wrapper">
+        {% include header.html %}
 
-    <div class="pagecontent">
+        <div class="pagecontent">
 
-    <div class="ink-grid top-space">
-            <div class="column-group horizontal-gutters">
-                <div class="all-75">
-                        {{ content }}
+        <div class="ink-grid top-space">
+                <div class="column-group horizontal-gutters">
+                    <div class="all-75">
+                            {{ content }}
+                    </div>
+                    <div class="all-25 noprint">
+                            {% include list.html %}
+                    </div>
                 </div>
-                <div class="all-25 noprint">
-                        {% include list.html %}
+                <div class="column-group">
+                    <div class="all-100">
+                        <hr/>
+                    </div>
                 </div>
-            </div>
-            <div class="column-group">
-                <div class="all-100">
-                    <hr/>
-                </div>
-            </div>
-    </div>
+        </div>
 
-    {% include footer.html %}
-    </div>
+        {% include footer.html %}
+        </div>
+    </main>
 </body>
 </html>
