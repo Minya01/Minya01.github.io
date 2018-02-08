@@ -1,3 +1,16 @@
-theme: jekyll-theme-cayman
-title: Summer's 博客
-description: 我思故我在
+name: Summer's 博客
+description: 前端
+meta_description: "记录生活记录你"
+
+markdown: kramdown
+highlighter: pygments
+logo: false
+paginate: 15
+baseurl: /
+domain_name: ''
+google_analytics: 'UA-XXXXXXXX-X'
+gems: [jekyll-paginate]
+
+# Details for the RSS feed generator
+url:            'http://Minya01.github.io'
+author:         'Summer'
