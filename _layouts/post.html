@@ -9,7 +9,7 @@ post_class: post-template
     <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
         <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">主页</a>
         <!-- <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a> -->
-        <a class="subscribe-button icon-github" href="http://Minya01.github.io">Github</a>
+        <a class="subscribe-button icon-github" href="{{ site.url }}">Github</a>
     </nav>
 </header>
 
@@ -73,7 +73,7 @@ post_class: post-template
                     <h4> {{ site.author }} </h4>
                     <!-- Author Bio -->
                     <p>
-                        <a href="http://Minya01.github.io">Github</a>
+                        <a href="{{ site.url }}">Github</a>
                     </p>
                 </section>
             {% endif %}
