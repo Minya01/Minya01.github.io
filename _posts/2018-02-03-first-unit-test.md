@@ -2,7 +2,7 @@
 layout: post
 title: 单元测试(1)
 date:   2018-02-03
-categories: 单元测试
+categories: unit-test
 ---
 
 单元测试一周学习总结
