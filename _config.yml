@@ -6,7 +6,10 @@ markdown: kramdown
 highlighter: pygments
 logo: false
 paginate: 15
-baseurl: 'http://Minya01.github.io'
+
+# baseurl 使用生产环境域名，如果不注释使用http://127.0.0.1:4000/无法访问
+# baseurl: 'http://Minya01.github.io'
+
 domain_name: ''
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
