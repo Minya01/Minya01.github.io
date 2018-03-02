@@ -10,3 +10,11 @@ jekyll serve --livereload
 
 ### 增量构建
 jekyll serve --incremental
+
+
+### 计划
+1.设计模式
+2.apply、call
+3.继承
+4.db
+5.webpack
