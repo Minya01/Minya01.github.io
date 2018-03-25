@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 单元测试(1)
+title: 单元测试
 date:   2018-02-03
 categories: unit-test
 ---
