@@ -9,7 +9,7 @@ paginate: 15
 
 # baseurl 使用生产环境域名，如果不注释使用http://127.0.0.1:4000/无法访问
 # 本地环境须注释
-# baseurl: 'http://Minya01.github.io'
+baseurl: 'http://Minya01.github.io'
 
 domain_name: ''
 google_analytics: 'UA-XXXXXXXX-X'
