@@ -47,7 +47,7 @@ npm run ios
 
 
 
-据说使用Android安装expo的apk扫描QR Code的过程中出现了很多问题。（https://github.com/react-community/create-react-native-app/issues/270）
+在使用Android安装expo的apk扫描QR Code的过程中会出现一些问题。[issue](https://github.com/react-community/create-react-native-app/issues/270)
 
 主要是二维码扫描经常没有效果外，而且打开时偶尔会报错。
 
