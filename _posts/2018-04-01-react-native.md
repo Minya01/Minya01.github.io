@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "使用react-native开发expo应用(太多坑)"
+title:  "使用react-native开发expo应用"
 date:   2018-03-25
 categories: react-native
 ---
