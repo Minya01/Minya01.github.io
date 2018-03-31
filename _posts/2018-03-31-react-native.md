@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "使用react-native开发expo应用"
-date:   2018-04-01
+date:   2018-03-31
 categories: react-native
 ---
 
