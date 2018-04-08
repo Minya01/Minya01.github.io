@@ -5,7 +5,7 @@ date:   2018-04-08
 categories: animation
 ---
 
-
+css动画是一个很有意思的问题，使用非常简单。使用流畅的css动画，可以提升用户体验。
 
 ### Animations基础模块
 
