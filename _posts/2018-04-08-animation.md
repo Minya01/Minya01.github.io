@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "学习animation动画"
+title:  "animation动画"
 date:   2018-04-08
 categories: animation
 ---
