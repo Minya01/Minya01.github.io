@@ -79,7 +79,7 @@ max-age之类声明允许再次使用缓存的最大时间（以发出请求的�
 
 ##### s-maxage
 
-"s-"表示"共享缓存"。该指令明确用于其他中间缓存中的CDN。此指令覆盖max-age指令和expires标题字段（如果存在）。keyCDN也服从这个指令。
+“s-”表示“共享缓存”。该指令明确用于其他中间缓存中的CDN。此指令覆盖max-age指令和expires标题字段（如果存在）。keyCDN也服从这个指令。
 
 Cache-Control指令是HTTP/1.1规范的一部分，取代了用于指定响应缓存策略的expires。所有现代留恋其都支持Cache-COntrol。
 
@@ -87,7 +87,7 @@ Cache-Control指令是HTTP/1.1规范的一部分，取代了用于指定响应�
 
 #### Pragma
 
-老的"pragma"指令大部分都被新的指令替代了。其中`pragma:no-cache`被新指令`cache-control:no-cache`替代，因此可以忽略，因为KeyCDN的服务器会忽略该请求头信息。
+老的“pragma”指令大部分都被新的指令替代了。其中`pragma:no-cache`被新指令`cache-control:no-cache`替代，因此可以忽略，因为KeyCDN的服务器会忽略该请求头信息。
 
 
 
@@ -118,7 +118,7 @@ Expires: Sun, 03 May 2018 23:02:37 GMT
 
 验证token就可以解决上述问题。服务器创建并返回存储在请求头ETag字段中的任意标记，这些标记通常是现有文件的散列或其他内容的指纹。客户不需要知道如何生存此令牌，但需要知道在随后的请求中将它们发送到服务器。如果令牌（token）相同，则资源没有改变，不需要重新获取资源。
 
-Web浏览器在"If-None-Match"HTTP请求头中自动提供ETag标记。服务器会检查缓存中当前资源的标记。如果服务器通过收到的标记判断缓存资源未变更，则发送`304 Not Modified`请求，节省带宽和时间。
+Web浏览器在“If-None-Match”HTTP请求头中自动提供ETag标记。服务器会检查缓存中当前资源的标记。如果服务器通过收到的标记判断缓存资源未变更，则发送`304 Not Modified`请求，节省带宽和时间。
 
 
 
@@ -126,7 +126,7 @@ Web浏览器在"If-None-Match"HTTP请求头中自动提供ETag标记。服务器
 
 ![](/assets/images/last-modified.jpg)
 
-"Last-Modified"指示文档资源上次更改的时间。当缓存存储包含该指令的资源时，可以它已经超时（自上次出现），则可以利用它来查询服务器。这可以使用"If-Modified-Since"请求头字段来完成。
+“Last-Modified”指示文档资源上次更改的时间。当缓存存储包含该指令的资源时，可以它已经超时（自上次出现），则可以利用它来查询服务器。这可以使用“If-Modified-Since”请求头字段来完成。
 
 HTTP/1.1源服务器应该同时发送ETag和Last-Modified值。
 
