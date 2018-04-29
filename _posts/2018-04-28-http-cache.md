@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  认识http缓存机制
+title:  认识HTTP缓存机制
 date:   2018-04-28
 categories: http
 ---
