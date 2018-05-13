@@ -81,6 +81,8 @@ girl1.__proto___ === Girl.prototype;
 girl1.__proto__ === Girl
 ```
 
+(….其他继承方式，待补充)
+
 
 
 ##### ES6继承
