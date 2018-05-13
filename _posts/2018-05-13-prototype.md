@@ -25,7 +25,9 @@ object.prototype.name = value;
 
 
 
-##### 构造函数继承
+##### 原型链继承
+
+将父类的实例作为子类的原型。
 
 ```javascript
 function Person(){
@@ -40,12 +42,29 @@ function Girl(){
     
 }
 
-// 继承Person
+// 继承Person  (原型链继承)
 Girl.prototype = new Person();
 
 // 创建girl1
 var girl1 = new Girl();
 console.log(girl1.getName()) //summer
+```
+
+
+
+##### 构造函数继承
+
+使用父类的构造函数来增强子类实例（复制父类的实例属性给子类）
+
+```javascript
+...
+function Girl(){
+    Person(this);//实现继承
+    // this.name = 'minya';
+}
+
+var girl2 = new Girl();
+console.log(girl2.name); // summer
 ```
 
 在ES5中，所有的构造函数的`__proto__`都指向Function.prototype。
